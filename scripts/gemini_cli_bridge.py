@@ -440,7 +440,7 @@ def main() -> None:
         default=5,
         help=(
             "Preferred focus-file cap used by guardrails. When no explicit --file is provided, auto-extracted focus files from PROMPT "
-            "are limited to this count. Explicit --file entries are always included (not blocked). Defaults to 2."
+            "are limited to this count. Explicit --file entries are always included (not blocked). Defaults to 5."
         ),
     )
     parser.add_argument(
