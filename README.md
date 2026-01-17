@@ -16,19 +16,25 @@
 
 ## 安装到 `~/.codex/skills/`
 
-如果你已经在本机的 `~/.codex/skills/` 里有该目录，则无需重复安装；否则可以把本项目放到：
+1) 选择安装目录 `~/.codex/skills` (若不存在请创建)：
 
 ```bash
 mkdir -p ~/.codex/skills
 ```
+2) Clone 本仓库到 `skills/` 目录下
 
-并保证目录结构至少包含 `SKILL.md` 和 `scripts/`：
+```bash
+cd ~/.codex/skills
+git clone https://github.com/ZhenHuangLab/collaborating-with-gemini-cli.git collaborating-with-gemini-cli
+
+```
+3) 验证文件结构，保证目录结构至少包含 `SKILL.md` 和 `scripts/`：
 
 ```bash
 ls -la ~/.codex/skills/collaborating-with-gemini-cli
 ```
 
-完成后，在对话中提到 `collaborating-with-gemini-cli`（或 `$collaborating-with-gemini-cli`）即可触发使用。
+完成后，在对话中提到 `collaborating-with-gemini-cli`（或 `$collaborating-with-gemini-cli` , 或者表达类似的意思）即可触发使用。
 
 ## 依赖
 

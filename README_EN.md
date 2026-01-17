@@ -16,19 +16,26 @@ Main entry points:
 
 ## Install to `~/.codex/skills/`
 
-If you already have this folder under `~/.codex/skills/`, you can skip this section. Otherwise:
+1) Choose the install directory `~/.codex/skills` (create it if it doesn't exist):
 
 ```bash
 mkdir -p ~/.codex/skills
 ```
 
-Make sure the folder contains at least `SKILL.md` and `scripts/`:
+2) Clone this repository into the `skills/` directory:
+
+```bash
+cd ~/.codex/skills
+git clone https://github.com/ZhenHuangLab/collaborating-with-gemini-cli.git collaborating-with-gemini-cli
+```
+
+3) Verify the folder structure; it should contain at least `SKILL.md` and `scripts/`:
 
 ```bash
 ls -la ~/.codex/skills/collaborating-with-gemini-cli
 ```
 
-After that, Codex CLI can discover it when loading local skills; mention `collaborating-with-gemini-cli` (or `$collaborating-with-gemini-cli`) in a conversation to trigger it.
+After that, mention `collaborating-with-gemini-cli` (or `$collaborating-with-gemini-cli`, or say something equivalent) in a conversation to trigger it.
 
 ## Dependencies
 
